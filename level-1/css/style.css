@@ -5,7 +5,7 @@ body {
     margin: 0;
     height: 100vh;
     font-family: Helvetica, sans-serif;
-    background-color: rgb(253, 246, 246);
+    background-color: rgb(253, 244, 244);
 }
 
 /* LAYOUT */
@@ -22,8 +22,8 @@ body {
     place-items: center;
     width: 60%;
     height: 80%;
+    margin: 0 auto;
 }
-
 
 /* SECTIONS */
 
@@ -31,8 +31,9 @@ body {
     grid-area: header;
     background-color: rgb(230, 212, 212);
     border-radius: 1rem;
-    box-shadow: 2px 2px 5px rgb(190, 47, 47);
+    box-shadow: 10px 10px 10px rgb(175, 99, 99);
     padding: 2rem;
+    width: 80%;
 }
 
 .title {
@@ -48,10 +49,10 @@ body {
 
 .button {
     grid-area: button;
-    width: 40%;
-    height: 50%;
+    width: 85%;
+    height: 80%;
     background-color: rgb(179, 82, 82);
-    box-shadow: 2px 2px 5px rgb(233, 153, 153);
+    box-shadow: 5px 5px 10px rgb(175, 99, 99);
     color: white;
     font-size: 1.1rem;
     font-weight: 700;
@@ -63,6 +64,13 @@ body {
 .button:hover {
     cursor: pointer;
     background-color: rgb(149, 18, 18);
-    
+    transform: scale(1.05, 1.05);
 }
 
+.joke-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgb(175, 99, 99);
+    width: 80%;
+}
