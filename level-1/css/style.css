@@ -1,0 +1,68 @@
+/* GLOBAL */
+
+html, 
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(253, 246, 246);
+}
+
+/* LAYOUT */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+        "header"
+        "button"
+        "jokes"
+    ;
+    place-items: center;
+    width: 60%;
+    height: 80%;
+}
+
+
+/* SECTIONS */
+
+.header-container {
+    grid-area: header;
+    background-color: rgb(230, 212, 212);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgb(190, 47, 47);
+    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    color: rgb(163, 33, 33);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgb(56, 17, 17);
+    text-align: center;
+}
+
+.button {
+    grid-area: button;
+    width: 40%;
+    height: 50%;
+    background-color: rgb(179, 82, 82);
+    box-shadow: 2px 2px 5px rgb(233, 153, 153);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(149, 18, 18);
+    
+}
+

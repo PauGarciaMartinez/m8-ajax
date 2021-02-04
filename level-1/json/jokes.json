@@ -1,13 +1,5 @@
-{
-    "jokes": [
-        {
-            "joke": "jajajajajajaj"
-        }, 
-        {
-            "joke": "jejejejejejejejej"
-        },
-        {
-            "joke": "jojojojojojojojojoj"
-        }
-    ]
-}
+[
+    { "joke": "jajajajajajaj" }, 
+    { "joke": "jejejejejejejejej" },
+    { "joke": "jojojojojojojojojoj" }
+]
