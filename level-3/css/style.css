@@ -1,0 +1,76 @@
+/* GLOBAL */
+
+html, 
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(253, 244, 244);
+}
+
+/* LAYOUT */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+        "header"
+        "button"
+        "jokes"
+    ;
+    place-items: center;
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+/* SECTIONS */
+
+.header-container {
+    grid-area: header;
+    background-color: rgb(230, 212, 212);
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgb(175, 99, 99);
+    padding: 2rem;
+    width: 80%;
+}
+
+.title {
+    text-align: center;
+    color: rgb(163, 33, 33);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgb(56, 17, 17);
+    text-align: center;
+}
+
+.button {
+    grid-area: button;
+    width: 85%;
+    height: 80%;
+    background-color: rgb(179, 82, 82);
+    box-shadow: 5px 5px 10px rgb(175, 99, 99);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(149, 18, 18);
+    transform: scale(1.05, 1.05);
+}
+
+.joke-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgb(175, 99, 99);
+    width: 80%;
+}
